@@ -23,7 +23,7 @@ while True:
             w,h = x2-x1,y2-y1
             cz.cornerRect(img,(x1,y1,w,h))
             conf = math.ceil((box.conf[0])*100)/100
-            cz.putTextRect(img,f'{conf}',(max(0,x1),max(35,y1)))
+            
             #class
             cls = int(box.cls[0])
             
